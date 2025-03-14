@@ -1,0 +1,6 @@
+@Mission10_Allred.API_HostAddress = http://localhost:5056
+
+GET {{Mission10_Allred.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
