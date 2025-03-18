@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Mission10_Allred.API.Data;
 
@@ -15,9 +16,34 @@ namespace Mission10_Allred.API.Controllers
         }
 
         //[HttpGet("AllBooks")]
-        public IEnumerable<Book> GetBooks()
+        public IActionResult GetBooks(int pageSize = 5, int pageNum = 1, string sortOrder = "asc")
         {
-            return _bookContext.Books.ToList();
+            IQueryable<Book> query = _bookContext.Books;
+
+            // Apply sorting
+            if (sortOrder.ToLower() == "desc")
+            {
+                query = _bookContext.Books.OrderByDescending(b => b.Title);
+            }
+            else
+            {
+                query = _bookContext.Books.OrderBy(b => b.Title);
+            }
+
+            var books = query
+                .Skip((pageNum - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var totalNumBooks = _bookContext.Books.Count();
+
+            var newObject = new
+            {
+                Books = books,
+                TotalNumBooks = totalNumBooks
+            };
+
+            return Ok(newObject);
         }
 
         //[HttpGet("FictionBooks")]

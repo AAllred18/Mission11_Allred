@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EZC5jQyLVfU=",
+  "dgSpecHash": "Glj0Gs5TK1M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andrew Allred\\Documents\\School\\2025 Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\Mission10_Allred.API.csproj",
+  "projectFilePath": "C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\Mission10_Allred.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andrew Allred\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.14\\microsoft.data.sqlite.core.8.0.14.nupkg.sha512",
     "C:\\Users\\Andrew Allred\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.14\\microsoft.entityframeworkcore.8.0.14.nupkg.sha512",
