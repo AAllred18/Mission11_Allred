@@ -15,7 +15,7 @@ namespace Mission10_Allred.API.Controllers
             _bookContext = temp;
         }
 
-        //[HttpGet("AllBooks")]
+        [HttpGet("AllBooks")]
         public IActionResult GetBooks(int pageSize = 5, int pageNum = 1, string sortOrder = "asc")
         {
 
@@ -61,6 +61,17 @@ namespace Mission10_Allred.API.Controllers
             };
 
             return Ok(newObject);
+        }
+
+        [HttpGet("GetBookTypes")]
+        public IActionResult GetBookTypes ()
+        {
+            var bookTypes = _bookContext.Books
+                .Select(p => p.Category)
+                .Distinct()
+                .ToList();
+
+            return Ok(bookTypes);
         }
 
         //[HttpGet("FictionBooks")]
