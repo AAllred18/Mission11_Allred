@@ -16,12 +16,11 @@ namespace Mission10_Allred.API.Controllers
         }
 
         [HttpGet("AllBooks")]
-        public IActionResult GetBooks(int pageSize = 5, int pageNum = 1, string sortOrder = "asc")
+        public IActionResult GetBooks(int pageSize = 5, int pageNum = 1, string sortOrder = "asc", [FromQuery] List<string> bookCategories = null)
         {
 
             string? favBookCategory = Request.Cookies["FavoriteCategory"];
             Console.WriteLine("~~~~~~~~COOKIE~~~~~~~\n" + favBookCategory);
-
 
             HttpContext.Response.Cookies.Append("FavoriteCategory", "Biography", new CookieOptions
             {
@@ -35,16 +34,23 @@ namespace Mission10_Allred.API.Controllers
                 Expires = DateTime.Now.AddMinutes(1),
             });
 
-            IQueryable<Book> query = _bookContext.Books;
+            var query2 = _bookContext.Books.AsQueryable();
+            if (bookCategories != null && bookCategories.Any())
+            {
+                query2 = query2.Where(c => bookCategories.Contains(c.Category));
+            }
+            ;
+
+            IQueryable<Book> query = query2;
 
             // Apply sorting
             if (sortOrder.ToLower() == "desc")
             {
-                query = _bookContext.Books.OrderByDescending(b => b.Title);
+                query = query2.OrderByDescending(b => b.Title);
             }
             else
             {
-                query = _bookContext.Books.OrderBy(b => b.Title);
+                query = query2.OrderBy(b => b.Title);
             }
 
             var books = query
@@ -52,7 +58,7 @@ namespace Mission10_Allred.API.Controllers
                 .Take(pageSize)
                 .ToList();
 
-            var totalNumBooks = _bookContext.Books.Count();
+            var totalNumBooks = query.Count();
 
             var newObject = new
             {

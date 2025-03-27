@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission10_Allred.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9ceebbbe136ec39a6a3d539a7952585980d33a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a3b4e23869461590fc03be1d23e4e69a3cf7f95")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission10_Allred.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission10_Allred.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
