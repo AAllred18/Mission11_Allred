@@ -13,7 +13,10 @@ function BooksList() {
     useEffect(() => {
         const fetchBooks = async () => {
             const response = await fetch(
-                `https://localhost:5000/Book?pageSize=${pageSize}&pageNum=${pageNum}&sortOrder=${sortOrder}`
+                `https://localhost:5000/Book?pageSize=${pageSize}&pageNum=${pageNum}&sortOrder=${sortOrder}`, 
+                {
+                    credentials: 'include',
+                }
             );
             const data = await response.json();
             setBooks(data.books);
