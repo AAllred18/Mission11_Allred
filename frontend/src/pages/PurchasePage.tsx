@@ -35,6 +35,7 @@ function PurchasePage() {
                     <h4 className="text-center mb-3">Price: ${bookPrice}</h4>
 
                     {/* I used focus-ring to create a blue ring around the input field when it is selected */}
+                    {/* Also added autoFocus to automatically gointo the input field when they select purchase from the Booklist */}
                     <div className="d-flex justify-content-center mb-4">
                         <input 
                             type="number" 
@@ -43,6 +44,7 @@ function PurchasePage() {
                             onChange={(x) => setQuantity(Number(x.target.value))}
                             className="form-control w-50 focus-ring" 
                             min="1"
+                            autoFocus
                         />
                     </div>
 
