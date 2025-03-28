@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission10_Allred.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fcc9920507c212892bdc4c566d97f82b1a72ffe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54ac6749c74133c30e5be90a45af6375c35264bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission10_Allred.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission10_Allred.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

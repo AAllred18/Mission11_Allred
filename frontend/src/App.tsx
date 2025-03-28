@@ -1,5 +1,5 @@
 import './App.css'
-import ProjectsPage from './pages/ProjectsPage'
+import BooksPage from './pages/BooksPage'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PurchasePage from './pages/PurchasePage';
 import CartPage from './pages/CartPage';
@@ -11,9 +11,9 @@ function App() {
       <CartProvider>
         <Router>
           <Routes>
-            <Route path='/' element={<ProjectsPage/>} />
-            <Route path='books' element={<ProjectsPage/>} />
-            <Route path='/purchase/:bookTitle/:bookId' element={<PurchasePage/>} />
+            <Route path='/' element={<BooksPage/>} />
+            <Route path='books' element={<BooksPage/>} />
+            <Route path='/purchase/:bookTitle/:bookId/:bookPrice' element={<PurchasePage/>} />
             <Route path='cart' element={<CartPage/>} />
           </Routes>
         </Router>

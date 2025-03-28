@@ -3,12 +3,14 @@ import BooksList from "../components/BooksList";
 import CategoryFilter from "../components/CategoryFilter";
 import WelcomeBand from "../components/WelcomeBand";
 import { useState } from "react";
+import CartSummary from "../components/CartSummary";
 
-function ProjectsPage ()
+function BooksPage ()
 {
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
     return (
         <>
+        <CartSummary/>
         <div className='container mt-4'>
                 <WelcomeBand />
             <div className='row'>
@@ -26,4 +28,4 @@ function ProjectsPage ()
     );
 }
 
-export default ProjectsPage;
+export default BooksPage;

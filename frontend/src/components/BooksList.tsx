@@ -36,8 +36,9 @@ function BooksList({selectedCategories}: {selectedCategories: string[]}) {
 
     return (
         <>
-            
-            <button onClick={() => {
+            {/* It is bright and unncessary, but I learned about the different button classes and used btn-outline-info here */}
+            <button className="btn btn-outline-info"
+                onClick={() => {
                 setSortOrder(sortOrder === "asc" ? "desc" : "asc");
                 setPageNum(1);
             }}>
@@ -60,7 +61,7 @@ function BooksList({selectedCategories}: {selectedCategories: string[]}) {
                         </ul>
                     </div>
 
-                    <button className="btn btn-success" onClick={() => navigate(`/purchase/${b.title}`)}>Purchase</button>
+                    <button className="btn btn-success" onClick={() => navigate(`/purchase/${b.title}/${b.bookID}/${b.price}`)}>Purchase</button>
                     
                 </div>
             )}
