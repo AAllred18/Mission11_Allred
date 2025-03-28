@@ -1,35 +1,25 @@
-import { useState } from 'react';
 import './App.css'
-import BooksList from './BooksList'
-import CategoryFilter from './CategoryFilter';
-import CookieConsent from "react-cookie-consent";
-import WelcomeBand from './WelcomeBand';
+import ProjectsPage from './pages/ProjectsPage'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PurchasePage from './pages/PurchasePage';
+import CartPage from './pages/CartPage';
+import { CartProvider } from './context/CartContext';
 
 function App() {
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-
   return (
     <>
-      <div className='container mt-4'>
-        <div className='row bg-primary text-white'>
-          <WelcomeBand/>
-        </div>
-        <div className='row'>
-            <div className='col-md-3'>
-              <CategoryFilter 
-                selectedCategories={selectedCategories} 
-                setSelectedCategories={setSelectedCategories}
-              />
-            </div>
-            <div className='col-md-9'>
-            <BooksList selectedCategories={selectedCategories}/>
-            </div>
-        </div>
-      </div>
-  
-      <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
+      <CartProvider>
+        <Router>
+          <Routes>
+            <Route path='/' element={<ProjectsPage/>} />
+            <Route path='books' element={<ProjectsPage/>} />
+            <Route path='/purchase/:bookTitle/:bookId' element={<PurchasePage/>} />
+            <Route path='cart' element={<CartPage/>} />
+          </Routes>
+        </Router>
+      </CartProvider>
     </>
-  )
+  );
 }
 
-export default App 
+export default App; 
