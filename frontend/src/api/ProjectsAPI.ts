@@ -2,7 +2,7 @@ import { Book } from "../types/Book";
 
 interface FetchBooksResponse {
     books: Book[];
-    totalnumBooks: number;
+    totalNumBooks: number;
 }
 
 const API_URL = 'https://bookstore-allred-backend.azurewebsites.net/book';
