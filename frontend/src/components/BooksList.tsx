@@ -23,7 +23,7 @@ function BooksList({selectedCategories}: {selectedCategories: string[]}) {
                 const data = await fetchBooks(pageSize, pageNum, sortOrder, selectedCategories);
                 
                 setBooks(data.books);
-                setTotalPages(Math.ceil(data.totalnumBooks / pageSize));
+                setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
             } catch (error) {
                 setError((error as Error).message);
             } finally {
