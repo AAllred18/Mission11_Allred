@@ -18,11 +18,12 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontEnd",
         policy =>
         {
-            // .AllowAnyOrigin()
-            policy.WithOrigins("http://localhost:3000", "https://bookstore-allred-backend.azurewebsites.net/")
-            .AllowCredentials()
+            //.WithOrigins("http://localhost:3000", "https://bookstore-allred-backend.azurewebsites.net")
+             
+            policy.WithOrigins("http://localhost:3000", "https://bookstore-allred-backend.azurewebsites.net")
             .AllowAnyHeader()
-            .AllowAnyMethod();
+            .AllowAnyMethod()
+            .AllowCredentials();
         });
 });
 
