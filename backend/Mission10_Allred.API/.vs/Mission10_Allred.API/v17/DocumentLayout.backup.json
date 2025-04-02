@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\Mission10_Allred.API.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mission10_Allred.API.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\Controllers\\BookController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\BookController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,16 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Mission10_Allred.API.csproj.user",
-              "DocumentMoniker": "C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\Mission10_Allred.API.csproj.user",
-              "RelativeDocumentMoniker": "Mission10_Allred.API.csproj.user",
-              "ToolTip": "C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\Mission10_Allred.API.csproj.user",
-              "RelativeToolTip": "Mission10_Allred.API.csproj.user",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2025-03-25T21:02:57.383Z",
-              "EditorCaption": ""
+              "DocumentIndex": 1,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-25T21:05:53.74Z"
             },
             {
               "$type": "Document",
@@ -63,13 +62,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\Andrew Allred\\Documents\\School\\2025_Winter\\IS 413 - Enterprise Application Development\\Mission11_Allred\\backend\\Mission10_Allred.API\\Controllers\\BookController.cs",
               "RelativeToolTip": "Controllers\\BookController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAEkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T16:55:21.967Z",
               "EditorCaption": ""

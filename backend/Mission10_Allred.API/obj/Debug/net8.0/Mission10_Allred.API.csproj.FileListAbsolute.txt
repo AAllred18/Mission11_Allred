@@ -140,3 +140,4 @@ C:\Users\Andrew Allred\Documents\School\2025_Winter\IS 413 - Enterprise Applicat
 C:\Users\Andrew Allred\Documents\School\2025_Winter\IS 413 - Enterprise Application Development\Mission11_Allred\backend\Mission10_Allred.API\obj\Debug\net8.0\Mission10_Allred.API.pdb
 C:\Users\Andrew Allred\Documents\School\2025_Winter\IS 413 - Enterprise Application Development\Mission11_Allred\backend\Mission10_Allred.API\obj\Debug\net8.0\Mission10_Allred.API.genruntimeconfig.cache
 C:\Users\Andrew Allred\Documents\School\2025_Winter\IS 413 - Enterprise Application Development\Mission11_Allred\backend\Mission10_Allred.API\obj\Debug\net8.0\ref\Mission10_Allred.API.dll
+C:\Users\Andrew Allred\Documents\School\2025_Winter\IS 413 - Enterprise Application Development\Mission11_Allred\backend\Mission10_Allred.API\bin\Debug\net8.0\Bookstore.sqlite

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/420469d7-8316-41bd-98ef-d5a4a8d93b96/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/BookStore-Allred-Backend",
+    "appService.deploySubpath": "backend\\Mission10_Allred.API\\publish"
+}
