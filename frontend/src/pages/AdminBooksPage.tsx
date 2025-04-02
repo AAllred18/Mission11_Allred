@@ -20,7 +20,7 @@ const AdminBooksPage = () => {
             try {
                 const data = await fetchBooks(pageSize, pageNum, 'asc', []);
                 setBooks(data.books)
-                setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
+                setTotalPages(Math.ceil(data.totalnumBooks / pageSize));
             } catch (err) {
                 setError((err as Error).message)
             } finally {
