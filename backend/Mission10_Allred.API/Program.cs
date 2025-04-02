@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
         {
             //.WithOrigins("http://localhost:3000", "https://bookstore-allred-backend.azurewebsites.net")
              
-            policy.WithOrigins("http://localhost:3000", "https://delightful-moss-0ba45991e.6.azurestaticapps.net")
+            policy.WithOrigins("https://delightful-moss-0ba45991e.6.azurestaticapps.net")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
@@ -28,6 +28,8 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+
+app.UseCors("AllowFrontEnd");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -37,7 +39,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // x => x.WithOrigins("http://localhost:3000")
-app.UseCors("AllowFrontEnd");
+
 
 app.UseHttpsRedirection();
 
