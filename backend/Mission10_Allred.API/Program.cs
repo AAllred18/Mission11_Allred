@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
         {
             //.WithOrigins("http://localhost:3000", "https://bookstore-allred-backend.azurewebsites.net")
              
-            policy.WithOrigins("http://localhost:3000", "https://bookstore-allred-backend.azurewebsites.net")
+            policy.WithOrigins("http://localhost:3000", "https://delightful-moss-0ba45991e.6.azurestaticapps.net")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
