@@ -4,13 +4,20 @@ import CategoryFilter from "../components/CategoryFilter";
 import WelcomeBand from "../components/WelcomeBand";
 import { useState } from "react";
 import CartSummary from "../components/CartSummary";
+import { useNavigate } from "react-router-dom";
 
 function BooksPage ()
 {
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+
+    const navigate = useNavigate();
+    
     return (
         <>
         <CartSummary/>
+        <button className="btn btn-success mb-3" onClick={() => navigate("/adminbooks")}>
+                    Go to Admin Page
+                </button>
         <div className='container mt-4'>
                 <WelcomeBand />
             <div className='row'>

@@ -4,6 +4,7 @@ import { deleteBook, fetchBooks } from "../api/ProjectsAPI";
 import Pagination from "../components/Pagination";
 import NewBookForm from "../components/NewBookForm";
 import EditBookForm from "../components/EditBookForm";
+import { useNavigate } from "react-router-dom";
 
 const AdminBooksPage = () => {
     const [books, setBooks] =  useState<Book[]>([]);   
@@ -14,6 +15,8 @@ const AdminBooksPage = () => {
     const [totalPages, setTotalPages] = useState<number>(0);
     const [showForm, setShowForm] = useState(false);
     const [editingBook, setEditingBook] = useState<Book | null>(null);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const loadBooks = async () => {
@@ -48,6 +51,10 @@ const AdminBooksPage = () => {
     return (
       <div>
         <h1>Admin - Books</h1>
+
+        <button className="btn btn-success mb-3" onClick={() => navigate("/books")}>
+            Go to Books Page
+        </button>
         
         {!showForm && (
             <button className="btn btn-success mb-3" onClick={() => setShowForm(true)}>Add Book</button>
